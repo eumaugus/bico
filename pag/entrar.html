@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BICO | Entrar</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- RESPONSIVIDADE -->
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="acesso-main">
+    <div class="navegacao">
+      <a title="Voltar" class="navegacao-item" href="../index.html">INÍCIO</a>
+      ‹
+      <a title="Página atual" class="navegacao-item" href="#">ENTRAR</a>
+    </div>
+
+    <main class="acesso-container">
+      <h2 class="acesso-titulo">ENTRAR</h2>
+
+      <form class="acesso-form" action="../services/entrar_usuario.php" method="post">
+
+        <div class="acesso-input">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required maxlength="199">
+        </div>
+
+        <div class="acesso-input">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" required minlength="8" maxlength="100">
+        </div>
+
+        <button type="submit" name="enviar">Enviar</button>
+      </form>
+    </main>
+  </body>
+  <script src="../js/function.js"></script>
+</html>
